@@ -1,0 +1,15 @@
+CREATE DATABASE sales;
+USE sales;
+
+CREATE TABLE orders (
+  order_id INT PRIMARY KEY,
+  customer_id INT,
+  order_date DATE,
+  order_total DECIMAL(10, 2)
+);
+
+INSERT INTO orders (order_id, customer_id, order_date, order_total)
+VALUES
+  (1, 101, '2023-05-15', 100.50),
+  (2, 102, '2023-05-20', 75.25),
+  (3, 103, '2023-05-25', 200.00);
