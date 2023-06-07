@@ -1,0 +1,13 @@
+CREATE DATABASE todo_list;
+USE todo_list;
+CREATE TABLE tasks (
+  task_id INT PRIMARY KEY,
+  task_name VARCHAR(255),
+  description VARCHAR(255),
+  is_completed BOOLEAN
+);
+INSERT INTO tasks (task_id, task_name, description, is_completed)
+VALUES
+  (1, 'reading', 'you need to read the data of the file', FALSE),
+  (2, 'writing', 'you need to write your own opinion in the file', TRUE),
+  (3, 'performing', 'you need to perform tasks given in the fie', FALSE);
